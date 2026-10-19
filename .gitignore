@@ -1,0 +1,20 @@
+# Variáveis de ambiente (Chaves e Senhas)
+.env
+
+# Banco de dados local (SQLite)
+db.sqlite3
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambientes virtuais (se você criou a venv dentro da pasta do projeto)
+venv/
+.venv/
+env/
+
+# Arquivos do VS Code ou outros editores
+.vscode/
+.idea/
