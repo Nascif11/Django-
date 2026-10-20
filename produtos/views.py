@@ -6,8 +6,11 @@ def ver_produto (request):
         nome = 'Caio'
         return render(request, 'ver_produtos.html',{'nome':nome})
     elif request.method=="POST":
-        nome= request.POST
-        print(nome)
+        nome= request.POST.get('nome')
+        idade= request.POST.get('idade')
+
+        pessoa = Pessoa(nome=nome, idade=idade)
+        pessoa.save()
         return HttpResponse('fui chamado')
 
 def inserir_produto(request):
